@@ -102,8 +102,8 @@ body .summary {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
-    padding: 30px 50px;
+    margin-top: 20px;
+    padding: 0px 15px;
     border-radius: 16px;
     box-shadow: 0 0 0 1px #f2f2f2;
 }

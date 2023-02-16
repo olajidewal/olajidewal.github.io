@@ -21,8 +21,8 @@ body article header {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    min-height: 400px;
-    padding: 50px;
+    min-height: 280px;
+    padding: 0px;
     border-radius: 16px;
     color: #000;
     background-position: center;

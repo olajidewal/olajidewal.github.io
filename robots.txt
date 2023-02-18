@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: googlece397a782c2c610e.html
+Sitemap: https://www.fj90.com/sitemap.xml

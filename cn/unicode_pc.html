@@ -7,7 +7,7 @@
     <meta name="description" content="PX, EM and PT are all commonly used length units, but there are differences and different usage scenarios between them. Here are the differences, advantages and usage of each of them.">
     <meta name="keywords" content="physical dimensions 5, Height units, Pixel unit">
     <meta name="author" content="elemis">
-    <title>PX to EM Online Conversion Tool</title>
+    <title>PX转EM在线转换工具</title>
     <link rel="shortcut icon" href="../static/image/favicon.png">
     <link rel="stylesheet" href="../static/css/plugins.css">
     <link rel="stylesheet" href="../static/css/style.css">
@@ -28,31 +28,30 @@
                         </div>
                         <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
                             <div class="offcanvas-header d-lg-none">
-                                <h3 class="text-white fs-30 mb-0">Sandbox</h3>
+
                                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
                             <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
                                 <ul class="navbar-nav">
                                     <ul class="navbar-nav">
                                         <li class="nav-item dropdown dropdown-mega">
-                                            <a class="nav-link dropdown-toggle" href="index.html" data-bs-toggle="dropdown">Home</a>
+                                            <a class="nav-link dropdown-toggle" href="index.html" data-bs-toggle="dropdown">主页</a>
 
                                             <!--/.dropdown-menu -->
                                         </li>
                                         <li class="nav-item dropdown dropdown-mega">
-                                            <a class="nav-link dropdown-toggle" href="unicode_pc.html" data-bs-toggle="dropdown">Units</a>
-
-                                            <!--/.dropdown-menu -->
-                                        </li>
-
-                                        <li class="nav-item dropdown dropdown-mega">
-                                            <a class="nav-link dropdown-toggle" href="unicode_currency_symbols.html" data-bs-toggle="dropdown">symbols</a>
+                                            <a class="nav-link dropdown-toggle" href="unicode_pc.html" data-bs-toggle="dropdown">单位</a>
 
                                             <!--/.dropdown-menu -->
                                         </li>
 
                                         <li class="nav-item dropdown dropdown-mega">
-                                            <a class="nav-link dropdown-toggle" href="unicode_pc.html" data-bs-toggle="dropdown">tools</a>
+                                            <a class="nav-link dropdown-toggle" href="unicode_currency_symbols.html" data-bs-toggle="dropdown">符号</a>
+                                            <!--/.dropdown-menu -->
+                                        </li>
+
+                                        <li class="nav-item dropdown dropdown-mega">
+                                            <a class="nav-link dropdown-toggle" href="unicode_pc.html" data-bs-toggle="dropdown">工具</a>
 
                                             <!--/.dropdown-menu -->
                                         </li>
@@ -97,10 +96,10 @@
                     <div class="col-md-10 col-xl-8 mx-auto">
                         <div class="post-header">
                             <div class="post-category text-line">
-                                <a href="#" class="hover" rel="category">Tool</a>
+                                <a href="#" class="hover" rel="category">工具</a>
                             </div>
-                            <!-- /.post-category -->
-                            <h1 class="display-1 mb-4">PX to EM Online Conversion Tool</h1>
+                            <!--/.post-category -->
+                            <h1 class="display-1 mb-4">PX 到 EM 在线转换工具</h1>
 
                             <!-- /.post-meta -->
                         </div>
@@ -122,28 +121,22 @@
                                     <div class="classic-view">
                                         <article class="post">
                                             <div class="post-content mb-5">
-                                                <p>PX, EM and PT are all commonly used length units, but there are differences and different usage scenarios between them. Here are the differences, advantages and usage of each of them.</p>
+                                                <p>PX、EM、PT都是常用的长度单位，但它们之间存在差异，使用场景也不同。以下是它们各自的区别、优点和用法。</p>
 
-                                                <h2 class="h1 mb-4">Difference between PX and EM:</h2>
-
-                                                <p>PX is an absolute unit, EM is a relative unit . Take 10px as an example: this means that the element will always be a fixed size across all devices and resolutions, regardless of any special needs the user
-                                                    wants it to have; but 1em corresponds to the font size currently in use, so it will change according to user preferences and preferences. Therefore EM is more suitable for describing layouts that can
-                                                    be scaled according to user needs.
+                                                <h2 class="h1 mb-4">PX和EM的区别：</h2>
+                                                <p>PX是绝对单位，EM是相对单位。以 10px 为例：这意味着该元素在所有设备和分辨率下始终保持固定大小，无论用户有何特殊需求 想要它拥有；但是1em对应的是当前使用的字体大小，所以会根据用户的喜好和喜好而变化。因此 EM 更适合描述可以 可根据用户需求进行缩放。
 
                                                 </p>
-                                                <p> EM units can easily solve the nesting problem. The font size is calculated in each hierarchy based on the text of the topmost label, as well as other attributes as well. For example, when H1 is set to 2em,
-                                                    the font size of the headings at each level will be automatically adjusted to the appropriate ratio. This makes EM perfect for insertable elastic shapes.
+                                                <p> EM单元可以轻松解决嵌套问题。字体大小是根据最顶层标签的文本以及其他属性在每个层次结构中计算的。例如，当 H1 设置为 2em 时， 每一级标题的字号会自动调整到合适的比例。这使得 EM 非常适合可插入的弹性形状。
                                                 </p>
 
-                                                <h3 class="h2 mb-4">PX and conversions between EM and PT</h3>
-
-
+                                                <h3 class="h2 mb-4">PX 和 EM 与 PT 之间的转换</h3>
                                                 <div class="card-body" style=" background-color: #f1f5fd!important; ">
 
                                                     <!-- /.form-floating -->
                                                     <div class="form-floating mb-4">
                                                         <input id="value" type="text" class="form-control" placeholder="Text Input">
-                                                        <label for="textInputExample">Input Value</label>
+                                                        <label for="textInputExample">输入值</label>
                                                     </div>
                                                     <select id="from_unit" class="form-select  mb-4" name="from_unit" onchange="convert()">
                                                         <option value="px">From px</option>
@@ -159,7 +152,7 @@
 
                                                     <div class="form-floating mb-4">
                                                         <input id="result" type="text" class="form-control" placeholder="Text Input">
-                                                        <label for="textInputExample">Output value</label>
+                                                        <label for="textInputExample">输出值</label>
                                                     </div>
                                                     <button onclick="convert()" class="btn btn-primary rounded-0 me-1 form-floating mb-2 mb-md-0">Convert</button>
 
@@ -344,35 +337,30 @@
                                                         </tbody>
                                                     </table>
                                                 </div>
-                                                <h3 class="h2 mb-4 ">What are PX units?</h3>
-                                                <p>px (pixel) is a relative length unit that specifies the size of a pixel. A pixel is the smallest point on a display, so it is a relatively precise unit. When designing fixed layouts, px is usually used as
-                                                    a unit of length. For example, to set image size, font size, etc. However, the disadvantage is that when the user changes the browser window size or switches between devices, the element size does not
-                                                    change accordingly.</p>
-                                                <h3 class="h2 mb-4 ">What are EM units?</h3>
-                                                <p>em is also a relative unit of length, based on the size of its parent element's font, and it can be adaptively expanded. For example, if a child element has a font size of 1.5em, its size will be 1.5 times
-                                                    the font size of the parent element. This makes EM suitable for dynamically adjusting layouts in responsive web design. For example, when viewing content on a mobile device, elements may need to be changed
-                                                    to fit the screen size. Another advantage of EM is that elements can be nested to create styles relative to multiple ancestor elements rather than just the parent element.</p>
-                                                <h3 class="h2 mb-4 ">What are PT units?</h3>
-                                                <p>A pt (point) is an absolute unit of length that is commonly used in print design and desktop publishing. PT remains consistent across resolutions, unlike pixels and percentages which depend on the display
-                                                    resolution. 1 pt is equal to 0.35 mm, which is approximately 1/72 of an inch.</p>
-                                                <h3 class="h2 mb-4 ">How to choose PX, PT, EM?</h3>
-                                                <p>For text size, it is recommended to use the relative unit em.</p>
-                                                <p>for page layout it is recommended to use the relative unit em for flexible layout.</p>
-                                                <p>For graphic sizes it is recommended to use px;</p>
-                                                <p>PT is used very rarely in web design, for printed materials it can be used.</p>
-                                                <p>In general, the choice of the right unit depends on the purpose of your design. In any case, make sure your text is clear and readable, and that you do not lose focus or unnecessarily ignore accessibility.</p>
-                                                <h3 class="h2 mb-4 ">Advantages of PX and EM?</h3>
-                                                <h3 class="h2 mb-4 ">PX, EM, PT difference, usage introduction?</h3>
-                                                <h3 class="h2 mb-4 ">Description of PX, EM, PT length units</h3>
-
+                                                <h3 class="h2 mb-4 ">什么是 PX 单位？</h3>
+                                                <p>px（像素）是一个相对长度单位，指定像素的大小。像素是显示器上最小的点，因此它是一个相对精确的单位。在设计固定布局时，通常使用 px 作为 一个长度单位。例如，设置图片大小、字体大小等。但缺点是当用户改变浏览器窗口大小或在设备之间切换时，元素大小不会 相应地改变。
+                                                </p>
+                                                <h3 class="h2 mb-4 ">什么是 EM 单位？</h3>
+                                                <p>em也是一个相对长度单位，基于其父元素字体的大小，可以自适应扩展。例如，如果子元素的字体大小为 1.5em，则其大小将是 1.5 倍 父元素的字体大小。这使得 EM 适合在响应式网页设计中动态调整布局。例如，在移动设备上查看内容时，可能需要更改元素 以适应屏幕尺寸。 EM 的另一个优点是元素可以嵌套以创建相对于多个祖先元素的样式，而不仅仅是父元素。</p>
+                                                <h3 class="h2 mb-4 ">什么是 PT 单位？</h3>
+                                                <p>pt（点）是印刷设计和桌面出版中常用的绝对长度单位。 PT 在各种分辨率下保持一致，这与取决于显示器的像素和百分比不同 解决。 1 磅等于 0.35 毫米，大约是 1/72 英寸。</p>
+                                                <h3 class="h2 mb-4 ">PX、PT、EM如何选择？</h3>
+                                                <p>文字大小，建议使用相对单位em。</p>
+                                                <p>页面布局建议使用相对单位em，布局灵活。</p>
+                                                <p>图片大小建议使用px；</p>
+                                                <p>PT 在网页设计中很少使用，对于印刷材料可以使用它。</p>
+                                                <p>一般来说，选择合适的单位取决于你的设计目的。在任何情况下，请确保您的文本清晰易读，并且您不会失去注意力或不必要地忽略可访问性。</p>
+                                                <h3 class="h2 mb-4 ">PX和EM的优势？</h3>
+                                                <h3 class="h2 mb-4 ">PX、EM、PT区别，用法介绍？</h3>
+                                                <h3 class="h2 mb-4 ">PX、EM、PT长度单位说明</h3>
                                             </div>
                                             <!-- /.post-content -->
                                             <div class="post-footer d-md-flex flex-md-row justify-content-md-between align-items-center mt-8 ">
                                                 <div>
                                                     <ul class="list-unstyled tag-list mb-0 ">
-                                                        <li><a href="# " class="btn btn-soft-ash btn-sm rounded-pill mb-0 ">Pixel unit</a></li>
-                                                        <li><a href="# " class="btn btn-soft-ash btn-sm rounded-pill mb-0 ">Height units</a></li>
-                                                        <li><a href="# " class="btn btn-soft-ash btn-sm rounded-pill mb-0 ">physical dimensions</a></li>
+                                                        <li><a href="# " class="btn btn-soft-ash btn-sm rounded-pill mb-0 ">像素单位</a></li>
+                                                        <li><a href="# " class="btn btn-soft-ash btn-sm rounded-pill mb-0 ">高度单位</a></li>
+                                                        <li><a href="# " class="btn btn-soft-ash btn-sm rounded-pill mb-0 ">物理尺寸</a></li>
                                                     </ul>
                                                 </div>
 
@@ -407,10 +395,9 @@
             <div class="row gy-6 gy-lg-0 ">
                 <div class="col-lg-4 ">
                     <div class="widget ">
-                        <h3 class="h2 mb-3 ">Fj90 interesting community</h3>
-                        <p class="lead mb-5 ">It's a fun community that exists in many people's favorites, and we share pictures, words, units of measurement, Unicode symbols, geographic knowledge, and monetary units from around the world, all of which are resources you'd
-                            normally forget about, but use often!</p>
-
+                        <h3 class="h2 mb-3 ">Fj90趣味社区</h3>
+                        <p class="lead mb-5 ">这是一个很多人都喜欢的有趣的社区，我们分享来自世界各地的图片、文字、度量单位、Unicode符号、地理知识和货币单位，所有这些是你想要的资源 通常忘记，但经常使用！
+                        </p>
 
                     </div>
                     <!-- /.widget -->
@@ -418,13 +405,13 @@
                 <!-- /column -->
                 <div class="col-md-4 col-lg-2 offset-lg-2">
                     <div class="widget">
-                        <h4 class="widget-title  mb-3">Recommend</h4>
+                        <h4 class="widget-title mb-3">推荐</h4>
                         <ul class="list-unstyled text-reset mb-0">
 
-                            <li><a href="unicode_characte.html">Unicode characters</a></li>
-                            <li><a href="unicode_currency_symbols.html">Currency Units</a></li>
-                            <li><a href="unicode_country_flags.html">Country Flags</a></li>
-                            <li><a href="unicode_pc.html">Unit Conversions</a></li>
+                            <li><a href="unicode_characte.html">Unicode 字符</a></li>
+                            <li><a href="unicode_currency_symbols.html">货币单位</a></li>
+                            <li><a href="unicode_country_flags.html">国家旗帜</a></li>
+                            <li><a href="unicode_pc.html">单位换算</a></li>
 
                         </ul>
                     </div>
@@ -433,12 +420,12 @@
                 <!-- /column -->
                 <div class="col-md-4 col-lg-2">
                     <div class="widget">
-                        <h4 class="widget-title  mb-3">Classification</h4>
+                        <h4 class="widget-title mb-3">分类</h4>
                         <ul class="list-unstyled text-reset mb-0">
-                            <li><a href="https://www.fj90.com/">Symbols</a></li>
-                            <li><a href="https://www.fj90.com/">Flags</a></li>
-                            <li><a href="https://www.fj90.com/">Unit</a></li>
-                            <li><a href="https://www.fj90.com/">Tools</a></li>
+                            <li><a href="https://www.fj90.com/">符号</a></li>
+                            <li><a href="https://www.fj90.com/">标记</a></li>
+                            <li><a href="https://www.fj90.com/">单位</a></li>
+                            <li><a href="https://www.fj90.com/">工具</a></li>
                         </ul>
                     </div>
                     <!-- /.widget -->
